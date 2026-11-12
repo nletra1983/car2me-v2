@@ -10,7 +10,8 @@ const surfaceStyles: Record<ExampleSurface, string> = {
     "border-border bg-transparent text-foreground shadow-none hover:bg-muted/50",
   proof:
     "border-proof-heading/40 bg-transparent text-foreground shadow-none hover:bg-background/60",
-  dark: "border-background/40 bg-transparent text-background shadow-none hover:bg-background/10",
+  dark:
+    "border-background/40 bg-transparent text-background shadow-none hover:bg-background/15 hover:text-background",
 }
 
 export function StartButton({ className }: { className?: string }) {
