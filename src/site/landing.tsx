@@ -1,7 +1,3 @@
-import { siteImages } from "@/lib/site-images"
-
-const finalistPhoto = siteImages.finalists
-
 import {
   Accordion,
   AccordionContent,
@@ -58,7 +54,14 @@ import {
   stories,
 } from "./content"
 import { publicUrl } from "@/lib/public-url"
+import { siteImages } from "@/lib/site-images"
 import { legalDocPaths, legalEntity } from "./legal-entity"
+
+type FinalistName = (typeof finalists)[number]["name"]
+
+function finalistPhotoUrl(name: FinalistName): string {
+  return siteImages.finalists[name]
+}
 
 const publicMethod = method.map((step) => {
   const dot = step.indexOf(". ")
@@ -437,7 +440,7 @@ export function Landing() {
                             <img
                               alt={item.photoAlt}
                               className="aspect-[4/3] w-full rounded-md bg-muted object-cover"
-                              src={finalistPhoto[item.name]}
+                              src={finalistPhotoUrl(item.name)}
                             />
                             <figcaption className="text-xs leading-snug text-muted-foreground">
                               Фото: {item.photoAuthor},{" "}
