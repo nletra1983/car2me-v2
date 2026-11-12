@@ -77,7 +77,7 @@ export function Landing() {
 
       <main>
         <section
-          className="mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-12 lg:grid-cols-2"
+          className="mx-auto grid w-full max-w-6xl scroll-mt-28 items-center gap-10 px-4 py-12 lg:grid-cols-2"
           id="top"
         >
           <div className="flex flex-col gap-6">

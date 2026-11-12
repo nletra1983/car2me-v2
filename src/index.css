@@ -109,7 +109,7 @@
     @apply bg-background text-foreground;
     }
   html {
-    @apply font-sans;
+    @apply scroll-pt-28 font-sans;
     }
 }
 
