@@ -31,8 +31,7 @@ jobs:
       - name: Build for GitHub Pages
         run: npm run build
         env:
-          # Пока car2me.ru не переведён на car2me-v2 — превью живёт под /car2me-v2/
-          VITE_BASE_PATH: /car2me-v2/
+          VITE_BASE_PATH: /
 
       - uses: actions/upload-pages-artifact@v3
         with:
