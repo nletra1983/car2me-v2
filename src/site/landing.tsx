@@ -57,6 +57,7 @@ import {
   steps,
   stories,
 } from "./content"
+import { publicUrl } from "@/lib/public-url"
 import { legalDocPaths, legalEntity } from "./legal-entity"
 
 const publicMethod = method.map((step) => {
@@ -262,7 +263,7 @@ export function Landing() {
                 </TabsList>
                 <div className="ml-auto">
                   <ExampleButton
-                    href="/пример-отчёта.pdf"
+                    href={publicUrl("пример-отчёта.pdf")}
                     surface="proof"
                     target="_blank"
                   >

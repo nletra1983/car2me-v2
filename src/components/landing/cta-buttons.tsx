@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { appPath } from "@/lib/public-url"
 import { cn } from "cn"
 
 /** Контурная кнопка: фон прозрачный, сливается с фоном блока. */
@@ -17,7 +18,7 @@ export function StartButton({ className }: { className?: string }) {
     <Button
       className={className}
       nativeButton={false}
-      render={<a href="/anketa" />}
+      render={<a href={appPath("anketa")} />}
       size="lg"
     >
       Начать анкету

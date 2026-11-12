@@ -1,11 +1,13 @@
+import { publicUrl } from "@/lib/public-url"
+
 /** Картинки лендинга в `public/images` — стабильные URL при публикации. */
 export const siteImages = {
-  logo: "/images/Car2me-1.png",
-  reportFan: "/images/отчёт-веер.png",
-  woman: "/images/women.png",
+  logo: publicUrl("images/Car2me-1.png"),
+  reportFan: publicUrl("images/отчёт-веер.png"),
+  woman: publicUrl("images/women.png"),
   finalists: {
-    "Hyundai Creta": "/images/creta.jpg",
-    "Toyota Raize": "/images/raize.jpg",
-    "Toyota Rush / Terios": "/images/rush.jpg",
+    "Hyundai Creta": publicUrl("images/creta.jpg"),
+    "Toyota Raize": publicUrl("images/raize.jpg"),
+    "Toyota Rush / Terios": publicUrl("images/rush.jpg"),
   },
 } as const

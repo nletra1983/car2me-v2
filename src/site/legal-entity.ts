@@ -1,3 +1,5 @@
+import { publicUrl } from "@/lib/public-url"
+
 /** Реквизиты получателя платежа за отчёт Car2Me (единый источник для сайта). */
 export const legalEntity = {
   nameFull:
@@ -12,9 +14,9 @@ export const legalEntity = {
 } as const
 
 export const legalDocPaths = {
-  offer: "/offer.html",
-  privacy: "/privacy.html",
-  pdConsent: "/pd-consent.html",
+  offer: publicUrl("offer.html"),
+  privacy: publicUrl("privacy.html"),
+  pdConsent: publicUrl("pd-consent.html"),
 } as const
 
 /** Строки для блока «Реквизиты» на лендинге */

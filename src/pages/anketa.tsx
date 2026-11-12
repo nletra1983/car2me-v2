@@ -9,6 +9,7 @@ import { Progress } from "@/components/ui/progress"
 import { Textarea } from "@/components/ui/textarea"
 import { cn } from "cn"
 import { METRIKA_GOALS, reachGoal } from "@/lib/metrika"
+import { appPath } from "@/lib/public-url"
 import { setPageMeta } from "@/lib/page-meta"
 import { legalDocPaths } from "@/site/legal-entity"
 
@@ -710,7 +711,7 @@ export function Anketa() {
           <a
             aria-label="Car2Me — на главную"
             className="rounded-sm focus-visible:ring-3 focus-visible:ring-ring"
-            href="/"
+            href={appPath("/")}
           >
             <BrandLogoMark className="h-12" />
           </a>
