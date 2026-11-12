@@ -112,8 +112,9 @@ export function Landing() {
             <div className="grid items-start gap-10 lg:grid-cols-2">
               <div className="flex flex-col gap-5">
                 <h2 className="text-[2.125rem] leading-tight font-semibold text-proof-heading">
-                  Вы рассказываете, как живёте. Мы переводим это в требования к
-                  машине
+                  Вы рассказываете, как живёте
+                  <br />
+                  Мы переводим это в требования к машине
                 </h2>
                 <div className="flex items-center gap-3">
                   <div
