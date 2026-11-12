@@ -431,10 +431,10 @@ export function Landing() {
               <TabsContent className="flex flex-col gap-4" value="final">
                 <ReportSheet page="Страница 5 из 11">
                   <div className="flex flex-col gap-6">
-                    <div className="grid gap-8 md:grid-cols-3">
+                    <div className="grid gap-8 md:grid-cols-3 md:items-stretch">
                       {finalists.map((item) => (
                         <div
-                          className="flex flex-col gap-2 border-t border-foreground pt-4"
+                          className="flex h-full flex-col gap-2 border-t border-foreground pt-4"
                           key={item.name}
                         >
                           <figure className="flex flex-col gap-1.5">
@@ -472,7 +472,7 @@ export function Landing() {
                           <p className="text-base font-medium">{item.price}</p>
                           <p className="text-sm leading-relaxed">{item.text}</p>
                           <a
-                            className="mt-1 w-fit text-sm underline underline-offset-4"
+                            className="mt-auto w-fit pt-2 text-sm underline underline-offset-4"
                             href={item.href}
                             rel="noopener noreferrer"
                             target="_blank"
