@@ -28,10 +28,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build for GitHub Pages (car2me.ru)
+      - name: Build for GitHub Pages
         run: npm run build
         env:
-          VITE_BASE_PATH: /
+          # Пока car2me.ru не переведён на car2me-v2 — превью живёт под /car2me-v2/
+          VITE_BASE_PATH: /car2me-v2/
 
       - uses: actions/upload-pages-artifact@v3
         with:

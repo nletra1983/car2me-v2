@@ -266,7 +266,7 @@ export function Landing() {
                 </TabsList>
                 <div className="ml-auto">
                   <ExampleButton
-                    href={publicUrl("пример-отчёта.pdf")}
+                    href={publicUrl("sample-report.pdf")}
                     surface="proof"
                     target="_blank"
                   >

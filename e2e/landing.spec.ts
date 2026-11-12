@@ -21,7 +21,7 @@ test.describe("Главная лендинга", () => {
     await expect(page.locator("#how")).toBeInViewport()
 
     await page.locator("#report").scrollIntoViewIfNeeded()
-    const pdf = page.locator('a[href*="пример-отчёта.pdf"]', {
+    const pdf = page.locator('a[href*="sample-report.pdf"]', {
       hasText: /Открыть пример целиком/i,
     })
     await expect(pdf).toBeVisible()
