@@ -1,15 +1,11 @@
-import { type CSSProperties } from "react"
-
 import { siteImages } from "@/lib/site-images"
 
 export function BrandLogoMark({ className }: { className?: string }) {
   return (
-    <span
-      aria-hidden="true"
-      className={`brand-mark ${className ?? ""}`}
-      style={
-        { "--brand-logo": `url("${siteImages.logo}")` } as CSSProperties
-      }
+    <img
+      alt="Car2Me"
+      className={`w-auto object-contain ${className ?? ""}`}
+      src={siteImages.logo}
     />
   )
 }

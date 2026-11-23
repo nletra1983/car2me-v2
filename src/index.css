@@ -180,41 +180,6 @@
   }
 }
 
-.brand-mark {
-  display: inline-block;
-  aspect-ratio: 1006 / 592;
-  background-color: oklch(0.68 0.23 48);
-  background-image:
-    radial-gradient(
-      8% 10% at 37.4% 32.1%,
-      oklch(0.99 0.1 95 / 0.95) 0%,
-      oklch(0.99 0.09 92 / 0.4) 46%,
-      oklch(0.99 0.08 90 / 0) 100%
-    ),
-    radial-gradient(
-      8% 10% at 62.7% 32.1%,
-      oklch(0.99 0.1 95 / 0.95) 0%,
-      oklch(0.99 0.09 92 / 0.4) 46%,
-      oklch(0.99 0.08 90 / 0) 100%
-    ),
-    linear-gradient(180deg, oklch(0.72 0.22 52) 0%, oklch(0.66 0.24 45) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  clip-path: inset(2px);
-  -webkit-mask-image: linear-gradient(#000, #000), var(--brand-logo);
-  mask-image: linear-gradient(#000, #000), var(--brand-logo);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  -webkit-mask-size: 100% 100%, 104% 104%;
-  mask-size: 100% 100%, 104% 104%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center, center;
-  mask-position: center, center;
-  -webkit-mask-mode: alpha, luminance;
-  mask-mode: alpha, luminance;
-}
-
 .brand-lid {
   background-color: oklch(0.68 0.23 48);
   background-image: linear-gradient(

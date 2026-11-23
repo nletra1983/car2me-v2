@@ -722,8 +722,8 @@ export function Landing() {
               дилер: не продаём машины и не получаем комиссию с лотов.
             </p>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Исполнитель: {legalEntity.nameShort}, ИНН {legalEntity.inn}, КПП{" "}
-              {legalEntity.kpp}
+              Исполнитель: {legalEntity.nameFull}, {legalEntity.statusShort}, ИНН{" "}
+              {legalEntity.inn}
             </p>
             <p className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-base">
               <span>© 2026 Car2Me</span>
